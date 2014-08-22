@@ -1,0 +1,40 @@
+{
+	"events" : [
+		{
+			"type" : "green",
+			"time" : "7:00"
+		},
+		{
+			"type" : "green",
+			"time" : "8:30"
+		},
+		{
+			"type" : "blue",
+			"time" : "9:15"
+		},
+		{
+			"type" : "green",
+			"time" : "11:00"
+		},
+		{
+			"type" : "green",
+			"time" : "12:00"
+		},
+		{
+			"type" : "blue",
+			"time" : "14:00"
+		},
+		{
+			"type" : "green",
+			"time" : "16:00"
+		},
+		{
+			"type" : "green",
+			"time" : "18:00"
+		},
+		{
+			"type" : "blue",
+			"time" : "20:00"
+		}
+	]
+}

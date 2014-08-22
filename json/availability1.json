@@ -1,0 +1,52 @@
+{
+	"availability": [
+		{
+			"monthName": "Jan",
+			"dates": []
+		},
+		{
+			"monthName": "Feb",
+			"dates": []
+		},
+		{
+			"monthName": "Mar",
+			"dates": []
+		},
+		{
+			"monthName": "Apr",
+			"dates": [5, 7, 8, 9, 13, 14, 15, 18, 19, 23, 24, 25, 26, 27, 29, 30]
+		},
+		{
+			"monthName": "May",
+			"dates": [5, 7, 8, 9, 13, 14, 15, 18, 19, 23, 24, 25, 26, 27, 29, 30]
+		},
+		{
+			"monthName": "Jun",
+			"dates": [5, 7, 8, 9, 13, 14, 15, 18, 19, 23, 24, 25, 26, 27, 29, 30]
+		},
+		{
+			"monthName": "Jul",
+			"dates": []
+		},
+		{
+			"monthName": "Aug",
+			"dates": []
+		},
+		{
+			"monthName": "Sep",
+			"dates": []
+		},
+		{
+			"monthName": "Oct",
+			"dates": []
+		},
+		{
+			"monthName": "Nov",
+			"dates": []
+		},
+		{
+			"monthName": "Dec",
+			"dates": []
+		}
+	]
+}

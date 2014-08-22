@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Care It</title>
+
+	<meta charset="utf-8" />
+	<meta name="description" content="Care It" />
+
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/provider.css" rel="stylesheet" type="text/css" />
+
+	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="shell">
+		<nav class="nav-access clearfix">
+			<ul class="right">
+				<li class="settings left">
+					<a href="#">
+						<i class="icon-provider-cog"></i>
+					</a>
+				</li>
+
+				<li class="left">
+					Welcome
+
+					<strong class="gray">Dr. Thomas Worrall</strong>
+				</li>
+
+				<li class="left">
+					<a href="#">Logout</a>
+				</li>
+			</ul>
+		</nav><!-- /.nav-access -->
+
+		<a href="#" class="logo notext">Care It</a>
+	</div><!-- /.shell -->
+
+	<div class="calendar-day">
+		<header class="calendar-day-head">
+			<div class="shell">
+				<a href="#" class="btn-schedule"><i class="ico ico-schedule"></i></a>
+
+				<h1><span class="calendar-day-text"></span> <span class="calendar-day-time"></span> <span class="calendar-day-hours"><span></span> <small>available live hours</small></span></h1>
+			</div><!-- /.shell -->
+		</header><!-- /.calendar-day-head -->
+
+		<div class="calendar-day-body">
+			<div class="calendar-day-row"></div><!-- /.calendar-day-row -->
+
+			<div class="calendar-container">
+				<div class="shell">
+
+					<div class="calendar-months-holder">
+						<div class="calendar-months">
+						</div><!-- /.calendar-months -->
+
+						<div class="calendar-months-slider">
+							<div class="calendar-months-slider-handle"></div><!-- /.calendar-months-slider-handle -->
+						</div><!-- /.calendar-months-slider -->
+					</div><!-- /.calendar-months-holder -->
+
+					<div class="calendar-monthly" id="calendar-monthly"></div><!-- /.calendar-monthly -->
+
+					<div class="calendar-actions">
+						<a href="#" class="link-add-break">x</a>
+						<a href="#" class="link-remove-time">-</a>
+					</div><!-- /.calendar-actions -->
+
+					<p class="calendar-tip">Touch any day on the calendar and add hours.</p><!-- /.calendar-tip -->
+				</div><!-- /.shell -->
+			</div><!-- /.calendar-container -->
+		</div><!-- /.calendar-day-body -->
+	</div><!-- /.calendar-day -->
+
+	<div class="form-response-holder">
+		<div class="shell">
+			<div class="form-response">
+				<form action="#" method="post">
+					<div class="form-head">
+						<h3>Text+ Response Time During</h3>
+					</div><!-- /.form-head -->
+					<div class="form-body">
+						<div class="form-row">
+							<div class="form-col form-col-1of2">
+								<label class="form-label">Office Hours</label>
+
+								<div class="custom-select">
+									<select>
+										<option>within 30 minutes</option>
+									</select>
+								</div><!-- /.custom-select -->
+							</div><!-- /.form-col form-col-1of2 -->
+
+							<div class="form-col form-col-1of2">
+								<label class="form-label">After Hours</label>
+
+								<div class="custom-select">
+									<select>
+										<option>within 12 hours</option>
+									</select>
+								</div><!-- /.custom-select -->
+							</div><!-- /.form-col form-col-1of2 -->
+						</div><!-- /.form-row -->
+					</div><!-- /.form-body -->
+				</form>
+			</div><!-- /.form-response -->
+		</div><!-- /.shell -->
+	</div><!-- /.form-response-holder -->
+
+	<div class="popup popup-work-hours" id="work-hours-tip" data-cookie="work-hours-tip">
+		<span class="popup-symbol">+</span>
+		<div class="popup-body">
+			<h3>Live Availability</h3>
+
+			<p>Swiss cheese schedule? No problem. CareIT lets <br> you schedule each day uniquely for taking live consults. Just slide handles left and right. Click outside box to set. To edit, click on box and repeat. To add another slider, click <span class="link-add-time">+</span> and touch the hourline.</p>
+
+			<div class="demo-weekday">
+				<div class="demo-weekday-ranges">
+					<div class="weekday-range weekday-range-work weekday-range-focus">
+						<div class="weekday-range-handle">
+							<span class="weekday-range-text">11:00</span>
+						</div>
+						<div class="weekday-range-handle">
+							<span class="weekday-range-text">12:00</span>
+						</div>
+					</div>
+				</div><!-- /.demo-weekday-ranges -->
+
+				<div class="demo-weekday-hours">
+					<ul>
+						<li></li>
+						<li></li>
+						<li>
+							<div class="weekday-hours-text">9</div><!-- /.weekday-hours-text -->
+						</li>
+						<li></li>
+						<li></li>
+						<li>
+							<div class="weekday-hours-text">12 <small>noon</small></div><!-- /.weekday-hours-text -->
+						</li>
+						<li></li>
+						<li></li>
+						<li>
+							<div class="weekday-hours-text">3</div><!-- /.weekday-hours-text -->
+						</li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div><!-- /.demo-weekday-hours -->
+			</div><!-- /.demo-weekday -->
+
+			<div class="form-create-cookie">
+				<div class="form-body">
+					<div class="form-row">
+						<label class="custom-checkbox">
+							<input type="checkbox" class="checkbox-cookie" data-createcookie="work-hours-tip" />
+
+							<span class="checkbox-fake"></span>
+
+							Got it! No need to show me again
+						</label>
+					</div><!-- /.form-row -->
+				</div><!-- /.form-body -->
+			</div><!-- /.form-create-cookie -->
+		</div><!-- /.popup-body -->
+	</div><!-- /#work-hours-tip.popup popup-work-hours -->
+
+	<div class="popup popup-break-hours" id="break-hours-tip" data-cookie="break-hours-tip">
+		<span class="popup-symbol">x</span>
+		<div class="popup-body">
+			<h3>Block hours</h3>
+
+			<p>Not available? No problem. Just click <span class="link-add-break">x</span> and touch the hourline. Slide handles left and right. Click outside box to set. To edit, click on box and repeat.</p>
+
+			<div class="demo-weekday">
+				<div class="demo-weekday-ranges">
+					<div class="weekday-range weekday-range-break weekday-range-focus">
+						<div class="weekday-range-handle">
+							<span class="weekday-range-text">11:00</span>
+						</div>
+						<div class="weekday-range-handle">
+							<span class="weekday-range-text">12:00</span>
+						</div>
+					</div>
+				</div><!-- /.demo-weekday-ranges -->
+
+				<div class="demo-weekday-hours">
+					<ul>
+						<li></li>
+						<li></li>
+						<li>
+							<div class="weekday-hours-text">9</div><!-- /.weekday-hours-text -->
+						</li>
+						<li></li>
+						<li></li>
+						<li>
+							<div class="weekday-hours-text">12 <small>noon</small></div><!-- /.weekday-hours-text -->
+						</li>
+						<li></li>
+						<li></li>
+						<li>
+							<div class="weekday-hours-text">3</div><!-- /.weekday-hours-text -->
+						</li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div><!-- /.demo-weekday-hours -->
+			</div><!-- /.demo-weekday -->
+
+			<div class="form-create-cookie">
+				<div class="form-body">
+					<div class="form-row">
+						<label class="custom-checkbox">
+							<input type="checkbox" class="checkbox-cookie" data-createcookie="break-hours-tip" />
+
+							<span class="checkbox-fake"></span>
+
+							Got it! No need to show me again
+						</label>
+					</div><!-- /.form-row -->
+				</div><!-- /.form-body -->
+			</div><!-- /.form-create-cookie -->
+		</div><!-- /.popup-body -->
+	</div><!-- /#break-hours-tip.popup popup-break-hours -->
+
+	<div class="popup popup-remove-hours" id="remove-hours-tip" data-cookie="remove-hours-tip">
+		<span class="popup-symbol">-</span>
+		<div class="popup-body">
+			<h3>Erase hours</h3>
+
+			<p>Oops? Need to remove a block of time? No problem. Just click <span class="link-remove-time">-</span> and touch the box. It gets erased from the hourline.</p>
+
+			<div class="demo-weekday">
+				<div class="demo-weekday-ranges">
+					<div class="weekday-range weekday-range-work weekday-range-focus">
+						<div class="weekday-range-handle">
+							<span class="weekday-range-text">11:00</span>
+						</div>
+						<div class="weekday-range-handle">
+							<span class="weekday-range-text">12:00</span>
+						</div>
+					</div>
+				</div><!-- /.demo-weekday-ranges -->
+
+				<div class="demo-weekday-hours">
+					<ul>
+						<li></li>
+						<li></li>
+						<li>
+							<div class="weekday-hours-text">9</div><!-- /.weekday-hours-text -->
+						</li>
+						<li></li>
+						<li></li>
+						<li>
+							<div class="weekday-hours-text">12 <small>noon</small></div><!-- /.weekday-hours-text -->
+						</li>
+						<li></li>
+						<li></li>
+						<li>
+							<div class="weekday-hours-text">3</div><!-- /.weekday-hours-text -->
+						</li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div><!-- /.demo-weekday-hours -->
+			</div><!-- /.demo-weekday -->
+
+			<div class="form-create-cookie">
+				<div class="form-body">
+					<div class="form-row">
+						<label class="custom-checkbox">
+							<input type="checkbox" class="checkbox-cookie" data-createcookie="remove-hours-tip" />
+
+							<span class="checkbox-fake"></span>
+
+							Got it! No need to show me again
+						</label>
+					</div><!-- /.form-row -->
+				</div><!-- /.form-body -->
+			</div><!-- /.form-create-cookie -->
+		</div><!-- /.popup-body -->
+	</div><!-- /#remove-hours-tip.popup popup-remove-hours -->
+
+	<div class="popup-overlay"></div><!-- /.popup-overlay -->
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.vmouse.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.datepicker.slider.min.js"></script>
+	<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script src="js/provider.js"></script>
+	<script src="js/work-schedule.js"></script>
+</body>
+</html>

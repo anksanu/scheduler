@@ -1,0 +1,43 @@
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  
+    <!-- CarouFredSel slider plugin -->
+    <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+  
+    <!-- jQuery UI Datepicker plugin -->
+    <script src="js/jquery-ui-1.10.4.datepicker.min.js"></script>
+
+    <!-- Custom select field -->
+    <script type="text/javascript" src="js/select2.min.js"></script>
+
+    <!-- Custom checkboxes -->
+    <script type="text/javascript" src="js/icheck.min.js"></script>
+
+    <!-- jScrollPane -->
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.jscrollpane.min.js"></script>
+    
+    <!-- human zooming -->
+    <script src="js/panzoom.js"></script>
+    
+    <script src="js/jquery.annotate.js"></script>
+
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/EventEmitter.min.js"></script>
+
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+    <script src="js/calendar.js"></script>
+
+
+    <!-- colorbox-popup -->
+    <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+
+  </body>
+</html>
