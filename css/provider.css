@@ -1234,19 +1234,19 @@ a img,
 .ui-datepicker-calendar td a.ui-state-active { background: #aadaf7; }
 
 .form-response-holder { background: #fff; }
-.form-response { padding: 90px 40px; }
+.form-response { padding: 125px 40px 90px 40px; }
 .form-response h3 { font-size: 49px; color: #ababab; padding: 0 24px 55px; font-family: 'Helvetica Neue 45Light', Helvetica, Arial, sans-serif; }
 .form-response .form-row { padding: 0 0 30px; overflow: hidden; }
 .form-response .form-col { float: left; }
 .form-response .form-col-1of2 { width: 50%; }
 .form-response .form-label { float: left; text-align: right; width: 152px; font-size: 20px; line-height: 76px; color: #999; }
-.form-response .custom-select { background: #fcfcfc; border: 1px solid #e0ddd9; width: auto; margin-left: 160px; height: 76px; position: relative; }
-.form-response .custom-select select { width: 100%; height: 76px; border: 0 none; background: transparent;font-family: sans-serif; top:-4px; position: relative; z-index: 2; -webkit-appearance: button; padding: 0 20px; font-size: 27px; font-weight: 100; color: #8b8a85; z-index: 2; }
+.form-response .custom-select { background: #fcfcfc; border: 1px solid #e0ddd9; width: auto; margin-left: 160px; margin-right: 15px; height: 76px; position: relative; }
+.form-response .custom-select select { width: 100%; height: 76px; border: 0 none; background: transparent;font-family: sans-serif; top:-4px; position: relative; z-index: 2; -webkit-appearance: button; padding: 0 25px; font-size: 19px; font-weight: 100; color: #8b8a85; z-index: 2; }
 .form-response .custom-select select:focus { outline: none; }
 .form-response .custom-select:before,
 .form-response .custom-select:after { content: ''; width: 0; height: 0; overflow: hidden; border-style: solid; position: absolute; right: 26px; }
-.form-response .custom-select:before { border-width: 0 5px 9px; border-color: transparent transparent #cdcdcb; top: 27px; }
-.form-response .custom-select:after { border-width: 9px 5px 0; border-color: #cdcdcb transparent transparent; bottom: 27px; }
+.form-response .custom-select:before { border-width: 0 5px 9px; border-color: transparent transparent #cdcdcb; top: 25px; }
+.form-response .custom-select:after { border-width: 9px 5px 0; border-color: #cdcdcb transparent transparent; bottom: 29px; }
 
 .chatspace .data-box .box-inner { height: 88%; }
 .chatspace .workspace-box.large-box .box-inner.box-block { background: #787979; }
