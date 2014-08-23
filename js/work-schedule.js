@@ -1014,7 +1014,8 @@
 		_range.$handles
 			.on('vmousedown', function(e) {
 				e.preventDefault();
-
+				e.stopPropagation();
+				_range.$range.off('vmousemove');
 				_range.dragging = true;
 
 				var $handle = $(this);
@@ -1092,6 +1093,45 @@
 			.on('vmousedown', function(e) {
 				if(_range.$weekday.find('.link-remove-time.active').length === 0) {
 					e.preventDefault();
+					_range.focusRange();
+				}
+				var $range = $(this);
+				var startPos = _range.$range.position().left;
+				var startWid = _range.$range.width();
+				var startX = e.pageX;
+				var oldTimeDifference = _range.endHour - _range.startHour;
+
+				$range.on('vmousemove',function(e){
+					e.preventDefault();
+
+					var newPos;
+					_range.dragging = true;
+
+					newPos = startPos + (e.pageX - startX);
+					
+					if(newPos >= 0){
+						_range.startHour = parseFloat( (newPos / _range.ratio / 60).toFixed(1) );
+						_range.endHour = _range.startHour + parseFloat(oldTimeDifference.toFixed(1));
+						if(_range.endHour > 24) {
+							_range.endHour = 24;
+							_range.startHour = _range.endHour - parseFloat(oldTimeDifference.toFixed(1));
+						}
+						_range.move();
+
+					} else {
+						_range.dragging = false;
+					}
+				});
+			})
+			.on('vmouseup', function(e){
+				e.preventDefault();
+
+				var $range = $(this);
+				$range.off('vmousemove');
+			})
+			.on('vclick', function(e) {
+				if(_range.$weekday.find('.link-remove-time.active').length === 0) {
+					e.preventDefault();
 				
 					_range.focusRange();
 				}
@@ -1102,6 +1142,8 @@
 				if(_range.dragging === true) {
 					_range.dragging = false;
 
+					_range.$range
+						.off('vmousemove');
 					_range.$container
 						.off('vmousemove');
 				}

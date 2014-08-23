@@ -1084,7 +1084,7 @@ a img,
 
 .weekday-range-work,
 .weekday-range-break { height: 22px; position: absolute; bottom: 0; min-width: 13px; cursor: pointer; }
-.weekday-range-handle { width: 50%; border-style: solid; border-width: 0 0 0 1px; height: 0; position: absolute; bottom: 0; left: 0; cursor: pointer; background: rgba(255,255,255,0); opacity: 0; }
+.weekday-range-handle { width: 10%;  border-style: solid; border-width: 0 0 0 1px; height: 0; position: absolute; bottom: 0; left: 0; cursor:col-resize; background: rgba(255,255,255,0); opacity: 0; }
 .weekday-range-focus { z-index: 2; }
 .weekday-range-focus .weekday-range-handle { opacity: 1; height: 84px; }
 .weekday-range-handle:after { content: ''; width: 10px; height: 10px; border-radius: 100%; position: absolute; top: 0; left: -5px; }
@@ -1170,10 +1170,10 @@ a img,
 .calendar-day-head { background: #ebebeb; margin-top: 12px; }
 .calendar-day-head h1 { font-size: 42px; line-height: 76px; color: #9c9c9c; }
 .calendar-day-head h1 small { font-size: 21px; line-height: 22px; }
-.calendar-day-head .calendar-day-text { float: left; width: 318px; height: 76px; text-align: center; letter-spacing: -2px; }
-.calendar-day-head .calendar-day-time { float: left; width: 316px; border-left: 8px solid #f8fafa; border-right: 8px solid #f8fafa; height: 76px; text-align: center; letter-spacing: -2px; }
+.calendar-day-head .calendar-day-text { float: left; width: 318px; height: 76px; text-align: center; letter-spacing: -2px; padding-top: 5px;}
+.calendar-day-head .calendar-day-time { float: left; width: 316px; border-left: 8px solid #f8fafa; border-right: 8px solid #f8fafa; height: 76px; text-align: center; letter-spacing: -2px; padding-top: 5px;}
 .calendar-day-head .calendar-day-hours { float: left; width: 292px; border-right: 8px solid #f8fafa; text-align: center; }
-.calendar-day-head .calendar-day-hours span { display: inline-block; width: 120px; }
+.calendar-day-head .calendar-day-hours span { display: inline-block; width: 120px; position:relative; top: 5px;}
 .calendar-day-head .calendar-day-hours small { display: inline-block; vertical-align: top; width: 110px; text-align: left; position: relative; top: 18px; }
 .calendar-day-head .shell { width: auto; max-width: 990px; border-left: 8px solid #f8fafa; border-right: 8px solid #f8fafa; height: 76px; }
 
@@ -1241,7 +1241,7 @@ a img,
 .form-response .form-col-1of2 { width: 50%; }
 .form-response .form-label { float: left; text-align: right; width: 152px; font-size: 20px; line-height: 76px; color: #999; }
 .form-response .custom-select { background: #fcfcfc; border: 1px solid #e0ddd9; width: auto; margin-left: 160px; height: 76px; position: relative; }
-.form-response .custom-select select { width: 100%; height: 76px; border: 0 none; background: transparent; position: relative; z-index: 2; -webkit-appearance: button; padding: 0 20px; font-size: 28px; font-weight: 400; color: #8b8a85; z-index: 2; }
+.form-response .custom-select select { width: 100%; height: 76px; border: 0 none; background: transparent;font-family: sans-serif; top:-4px; position: relative; z-index: 2; -webkit-appearance: button; padding: 0 20px; font-size: 27px; font-weight: 100; color: #8b8a85; z-index: 2; }
 .form-response .custom-select select:focus { outline: none; }
 .form-response .custom-select:before,
 .form-response .custom-select:after { content: ''; width: 0; height: 0; overflow: hidden; border-style: solid; position: absolute; right: 26px; }
