@@ -968,6 +968,8 @@
 		this.$container = this.$weekday.find('.weekday-row-ranges');
 		this.$hoursTitle = this.$weekday.find('.weekday-row-title');
 		this.$hoursText = this.$hoursTitle.find('strong');
+		this.currentHourMarker = this.$weekday.find('.weekday-row-hours .current-hour-marker').css('width');
+		this.currentHourMarker = this.currentHourMarker ? this.currentHourMarker.replace('px', '') : 0;
 		this.rangeType = options.rangeType;
 		this.startHour = options.startHour;
 		this.endHour = options.endHour;
@@ -1113,6 +1115,10 @@
 					_range.dragging = true;
 
 					newPos = startPos + (e.pageX - startX);
+
+					if(newPos <= _range.currentHourMarker){
+						newPos = _range.currentHourMarker;
+					}
 					
 					if(newPos >= 0){
 						_range.startHour = parseFloat( (newPos / _range.ratio / 60).toFixed(1) );
