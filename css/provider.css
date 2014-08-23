@@ -1220,6 +1220,7 @@ a img,
 .calendar-months li a { display: block; position: relative; background: #f1f1f1; color: #939393; width: 60px; }
 .calendar-months li a:hover { text-decoration: none; }
 .calendar-months li small { font-size: 12px; line-height: 14px; position: absolute; bottom: 8px; left: 0; right: 0; display: none; }
+.calendar-months .month-active {background:#d5e9f1;}
 
 .ui-datepicker-title { font-size: 57px; line-height: 57px; color: #ababab; letter-spacing: -2px; padding: 0 0 20px 20px; }
 

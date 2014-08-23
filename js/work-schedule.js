@@ -244,6 +244,10 @@
 					.attr('data-month', currentMonth)
 					.html(monthText);
 
+				if(!i && !j){
+					$month.find('a')
+						.addClass('month-active');
+				}
 				$holder.append($month);
 
 				currentMonth++;
@@ -412,11 +416,12 @@
 		this.$monthLinks
 			.on('click', function(e) {
 				e.preventDefault();
-
 				var $link = $(this);
 				var targetDate = new Date((parseInt($link.attr('data-month'), 10) + 1) + '/01/' + $link.attr('data-year'));
 				var currentDate = _cal.$calendar.datepicker('getDate');
 
+				_cal.$monthLinks.removeClass('month-active');
+				$link.addClass('month-active');
 				if((targetDate.getMonth() === currentDate.getMonth() && targetDate.getYear() === currentDate.getYear()) === false) {
 					_cal.$calendar.datepicker('setDate', targetDate);
 				}
