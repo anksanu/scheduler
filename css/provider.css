@@ -1084,7 +1084,7 @@ a img,
 
 .weekday-range-work,
 .weekday-range-break { height: 22px; position: absolute; bottom: 0; min-width: 13px; cursor: pointer; }
-.weekday-range-handle { width: 10%;  border-style: solid; border-width: 0 0 0 1px; height: 0; position: absolute; bottom: 0; left: 0; cursor:col-resize; background: rgba(255,255,255,0); opacity: 0; }
+.weekday-range-handle { width: 10%;  border-style: solid; border-width: 0 0 0 1px; height: 0; position: absolute; bottom: 0; left: 0; cursor:ew-resize; background: rgba(255,255,255,0); opacity: 0; }
 .weekday-range-focus { z-index: 2; }
 .weekday-range-focus .weekday-range-handle { opacity: 1; height: 84px; }
 .weekday-range-handle:after { content: ''; width: 10px; height: 10px; border-radius: 100%; position: absolute; top: 0; left: -5px; }
