@@ -84,7 +84,7 @@ body {
 	-ms-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
-	background: #fcfcfc;
+	background: #FFFFFF;
 	min-width: 100%;
 }
 
@@ -176,7 +176,7 @@ body,
 h2,
 h3,
 #carousel-consult-apps .entry-overview .button-review,
-.nav-access li strong.gray { font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif; font-weight: normal; }
+.nav-access li strong.gray { font-family: 'Helvetica Neue 45Light', Helvetica, Arial, sans-serif; font-weight: normal; }
 
 h4,
 .box-accordion .panel-group .panel-heading h5 a span,
@@ -190,7 +190,7 @@ h4,
 .summary-message .message-content,
 .weekdays-head h1,
 .weekdays-head h2,
-.calendar-day-head h1 { font-family: 'Helvetica Neue 45Light', Helvetica, Arial, sans-serif; font-weight: normal; }
+.calendar-day-head h1 { font-family: 'HelveticaNeueLTStd23UltraLightExtended', Helvetica, Arial, sans-serif; font-weight: normal;letter-spacing: 1px; }
 
 .nav-access,
 .workspace h2 strong,
@@ -1013,7 +1013,7 @@ a img,
 .gray,
 .nav-access li strong.gray { color: #a8a8a8; }
 
-.nav-access li strong.gray { font-weight: 400; }
+.nav-access li strong.gray { font-weight: 600; }
 
 .weekdays-head { padding: 80px 0; text-align: center; }
 .weekdays-head h1 { font-size: 52px; line-height: 60px; color: #a3a3a3; padding: 0 0 48px; }
@@ -1167,17 +1167,17 @@ a img,
 .calendar-day .weekday-row-title { display: none; }
 .calendar-day .weekday-row-actions { margin-left: 316px; }
 
-.calendar-day-head { background: #ebebeb; margin-top: 12px; }
+.calendar-day-head { background: #FFFFF; margin-top: 12px; }
 .calendar-day-head h1 { font-size: 42px; line-height: 76px; color: #9c9c9c; }
 .calendar-day-head h1 small { font-size: 21px; line-height: 22px; }
 .calendar-day-head .calendar-day-text { float: left; width: 318px; height: 76px; text-align: center; letter-spacing: -2px; padding-top: 5px;}
-.calendar-day-head .calendar-day-time { float: left; width: 316px; border-left: 8px solid #f8fafa; border-right: 8px solid #f8fafa; height: 76px; text-align: center; letter-spacing: -2px; padding-top: 5px;}
-.calendar-day-head .calendar-day-hours { float: left; width: 292px; border-right: 8px solid #f8fafa; text-align: center; }
+.calendar-day-head .calendar-day-time { float: left; width: 316px; border-left: 8px solid #FFFFFF; border-right: 8px solid #FFFFFF; height: 76px; text-align: center; letter-spacing: -2px; padding-top: 5px;}
+.calendar-day-head .calendar-day-hours { float: left; width: 292px; border-right: 8px solid #FFFFFF; text-align: center; }
 .calendar-day-head .calendar-day-hours span { display: inline-block; width: 120px; position:relative; top: 5px;}
-.calendar-day-head .calendar-day-hours small { display: inline-block; vertical-align: top; width: 110px; text-align: left; position: relative; top: 18px; }
-.calendar-day-head .shell { width: auto; max-width: 990px; border-left: 8px solid #f8fafa; border-right: 8px solid #f8fafa; height: 76px; }
+.calendar-day-head .calendar-day-hours small { display: inline-block; vertical-align: top; width: 110px; text-align: left; position: relative; top: 18px; font-family: 'Helvetica Neue 45Light', Helvetica, Arial, sans-serif;  }
+.calendar-day-head .shell { background:#F5F5F5; width: auto; max-width: 990px; border-left: 8px solid #FFFFFF; border-right: 8px solid #FFFFFF; height: 76px; }
 
-.calendar-day-head .btn-schedule { float: right; width: 48px; height: 76px; position: relative; background: #e6e6e6; }
+.calendar-day-head .btn-schedule { float: right; width: 48px; height: 76px; position: relative; background: #F3F3F3; }
 .calendar-day-head .btn-schedule:hover { background: #e0e0e0; }
 .calendar-day-head .btn-schedule .ico-schedule { background: url(../img/ico-schedule.png) no-repeat; width: 49px; height: 50px; position: absolute; top: 50%; left: 50%; margin: -25px 0 0 -25px;
 	-webkit-transform: scale(.65);
@@ -1232,17 +1232,17 @@ a img,
 .ui-datepicker-calendar td.scheduled a { background: #d5e9f1; }
 .ui-datepicker-calendar td.scheduled span { background: #eee; display: block; line-height: 36px; border-radius: 3px; }
 .ui-datepicker-calendar td.ui-datepicker-current-day a { border: 2px solid #b4b8b9; line-height: 32px; }
-.ui-datepicker-calendar td a.ui-state-active { background: #aadaf7; }
+.ui-datepicker-calendar td a.ui-state-active { background: #DEECF2; }
 
 .form-response-holder { background: #fff; }
 .form-response { padding: 125px 40px 90px 40px; }
-.form-response h3 { font-size: 49px; color: #ababab; padding: 0 24px 55px; font-family: 'Helvetica Neue 45Light', Helvetica, Arial, sans-serif; }
+.form-response h3 { font-size: 49px; color: #ababab; padding: 0 24px 55px; font-family: 'HelveticaNeueLTStd23UltraLightExtended', Helvetica, Arial, sans-serif; }
 .form-response .form-row { padding: 0 0 30px; overflow: hidden; }
 .form-response .form-col { float: left; }
 .form-response .form-col-1of2 { width: 50%; }
 .form-response .form-label { float: left; text-align: right; width: 152px; font-size: 20px; line-height: 76px; color: #999; }
 .form-response .custom-select { background: #fcfcfc; border: 1px solid #e0ddd9; width: auto; margin-left: 160px; margin-right: 15px; height: 76px; position: relative; }
-.form-response .custom-select select { width: 100%; height: 76px; border: 0 none; background: transparent;font-family: sans-serif; top:-4px; position: relative; z-index: 2; -webkit-appearance: button; padding: 0 25px; font-size: 19px; font-weight: 100; color: #8b8a85; z-index: 2; }
+.form-response .custom-select select { width: 100%; height: 76px; border: 0 none; background: transparent;font-family: 'HelveticaNeueLTStd23UltraLightExtended', Helvetica, Arial, sans-serif;letter-spacing: 1px; top:-3px; position: relative; z-index: 2; -webkit-appearance: button; padding: 0 25px; font-size: 19px; font-weight: 100; color: #8b8a85; z-index: 2; }
 .form-response .custom-select select:focus { outline: none; }
 .form-response .custom-select:before,
 .form-response .custom-select:after { content: ''; width: 0; height: 0; overflow: hidden; border-style: solid; position: absolute; right: 26px; }
